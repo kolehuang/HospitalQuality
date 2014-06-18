@@ -25,5 +25,5 @@ best <- function(state, outcome) {
 	answer <- subset(data.state, data.state[[3]] == min(data.state[[3]], na.rm = TRUE))
 	# answer <- data.state[data.state[[3]] == min(data.state[[3]], na.rm = TRUE), 1]	
 
-	return(answer[, 1]) #[1]
+	return(answer[1, 1]) 
 }
